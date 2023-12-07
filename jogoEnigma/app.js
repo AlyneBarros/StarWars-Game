@@ -51,7 +51,7 @@ const enigmas = [
   {
     pergunta:
       "Qual é o nome da estação espacial colossal capaz de destruir planetas?",
-    resposta: " Estrela da Morte",
+    resposta: "Estrela da Morte",
   },
 ];
 
