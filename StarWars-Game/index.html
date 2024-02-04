@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Star Wars Game</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container__conteudo">
+            <div class="container__informacoes">
+                <div class="container__texto">
+                    <h1>Star <span class="container__texto-azul">Wars</span></h1>
+                    <p class="texto__paragrafo" id="enigma"></p>
+                    <div class="container__botoes">
+                        <button onclick="selecionarResposta(0)" class="container__botao" id="opcao0"></button>
+                        <button onclick="selecionarResposta(1)" class="container__botao" id="opcao1"></button>
+                        <button onclick="selecionarResposta(2)" class="container__botao" id="opcao2"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="container__imagem-pessoa">
+                <img src="./img/yodda_.png" alt="Uma pessoa olhando para a esquerda" />
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js" defer></script>
+</body>
+
+</html>

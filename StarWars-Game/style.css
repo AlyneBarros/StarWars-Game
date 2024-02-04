@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body {
+  background-image: url("img/starWars.png");
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body::before {
+  background-image: url("img/R.jpeg");
+  background-repeat: no-repeat;
+  background-position: right;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+}
+
+.container {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-a;
+  border-radius: 24px;
+  border: 1px solid #1875e8;
+  box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.15);
+  background-image: url("img/Ruido.png");
+  background-size: 100% 90%;
+  position: relative;
+}
+
+.container__conteudo {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.container__informacoes {
+  flex: 1;
+  padding: 1rem;
+}
+
+.container__botao {
+  border-radius: 16px;
+  background: #9cb309;
+  padding: 13px 21px;
+  width: 50%;
+  font-size: 24px;
+  font-weight: 700;
+  border: none;
+  margin-top: 1rem;
+}
+
+.container__texto {
+  margin: 10px 0 10px 0;
+}
+
+.container__texto-azul {
+  color: #9cb309;
+  width: 100px;
+}
+
+.container__botoes {
+  display: flex;
+  gap: 5em;
+}
+
+h1 {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 67px;
+  padding-bottom: 1rem;
+}
+
+p,
+button {
+  font-family: "Inter", sans-serif;
+}
+
+.texto__paragrafo {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+button:disabled {
+  background-color: gray;
+}
+
+@media screen and (max-width: 1020px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  .container__botao {
+    font-size: 16px;
+  }
+
+  .texto__paragrafo {
+    font-size: 24px;
+   
+  }
+
+  .container__imagem-pessoa {
+    display: none;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+  }
+
+  .container__conteudo {
+    display: block;
+    position: inherit;
+  }
+
+  .container__informacoes {
+    padding: 1rem;
+  }
+}
+.container__imagem-pessoa {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  width: 70%;
+  object-fit: fill;
+  margin-top: 40px;
+}
